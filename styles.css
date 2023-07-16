@@ -6,15 +6,15 @@
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-
 nav{
   position: fixed;
   top: 0;
   width: 100%;
   display: flex;
   align-items: center;
-  padding: 20px 10%;
-  font-size: 24px;
+  padding: 10px 20%;
+  font-size: 18px;
+  
 }
 
 .Main-nav, .Main-nav ul li a, .Main-nav a span {
@@ -22,6 +22,8 @@ nav{
   justify-content: space-between;
   background-color: #114D22;
   color: white;
+  z-index: 10;
+ 
 }
 
 .Main-nav a:link, .Main-nav ul li a:link, .Sub-nav ul li a:link { 
@@ -56,6 +58,28 @@ nav{
   order: 1;
 }
 
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 20px 20%;
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+  background-color: #202024;
+}
+
+footer ul {
+  list-style-type: none; 
+  display: flex; 
+}
+
+footer ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 40px;
+}
+
 body {
   background-color: #F6F6F6;
 }
@@ -67,7 +91,7 @@ body > header ul {
 }
 
 main {
-  margin-top: 10%;
+  margin-top: 8%;
 }
 
 main #Hero p{
@@ -121,4 +145,8 @@ h1 {
   padding: 5px 20px 5px;
   border-radius: 3px;
   color: white;
+}
+
+main #Contact-Us {
+  padding-bottom: 100px;
 }
